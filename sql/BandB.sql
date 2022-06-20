@@ -39,28 +39,30 @@ CREATE TABLE IF NOT EXISTS customer (
   PRIMARY KEY (customerID)
 ) AUTO_INCREMENT=1;
 
-INSERT INTO customer (customerID, firstname, lastname, email) 
+INSERT INTO customer (customerID, firstname, lastname, email, username, password) 
 VALUES 
-(1,"Garrison","Jordan","sit.amet.ornare@nequesedsem.edu"),
-(2,"Desiree","Collier","Maecenas@non.co.uk"),
-(3,"Irene","Walker","id.erat.Etiam@id.org"),
-(4,"Forrest","Baldwin","eget.nisi.dictum@a.com"),
-(5,"Beverly","Sellers","ultricies.sem@pharetraQuisqueac.co.uk"),
-(6,"Glenna","Kinney","dolor@orcilobortisaugue.org"),
-(7,"Montana","Gallagher","sapien.cursus@ultriciesdignissimlacus.edu"),
-(8,"Harlan","Lara","Duis@aliquetodioEtiam.edu"),
-(9,"Benjamin","King","mollis@Nullainterdum.org"),
-(10,"Rajah","Olsen","Vestibulum.ut.eros@nequevenenatislacus.ca"),
-(11,"Castor","Kelly","Fusce.feugiat.Lorem@porta.co.uk"),
-(12,"Omar","Oconnor","eu.turpis@auctorvelit.co.uk"),
-(13,"Porter","Leonard","dui.Fusce@accumsanlaoreet.net"),
-(14,"Buckminster","Gaines","convallis.convallis.dolor@ligula.co.uk"),
-(15,"Hunter","Rodriquez","ridiculus.mus.Donec@est.co.uk"),
-(16,"Zahir","Harper","vel@estNunc.com"),
-(17,"Sopoline","Warner","vestibulum.nec.euismod@sitamet.co.uk"),
-(18,"Burton","Parrish","consequat.nec.mollis@nequenonquam.org"),
-(19,"Abbot","Rose","non@et.ca"),
-(20,"Barry","Burks","risus@libero.net");
+(1,"Garrison","Jordan","sit.amet.ornare@nequesedsem.edu", "gjordan", "p@ssword1"),
+(2,"Desiree","Collier","Maecenas@non.co.uk", "dcollier", "p@ssword1"),
+(3,"Irene","Walker","id.erat.Etiam@id.org", "iwalker", "p@ssword1"),
+(4,"Forrest","Baldwin","eget.nisi.dictum@a.com", "fbaldwin", "p@ssword1"),
+(5,"Beverly","Sellers","ultricies.sem@pharetraQuisqueac.co.uk", "bsellers", "p@ssword1"),
+(6,"Glenna","Kinney","dolor@orcilobortisaugue.org", "gkinney", "p@ssword1"),
+(7,"Montana","Gallagher","sapien.cursus@ultriciesdignissimlacus.edu", "mgallagher", "p@ssword1"),
+(8,"Harlan","Lara","Duis@aliquetodioEtiam.edu", "hlara", "p@ssword1"),
+(9,"Benjamin","King","mollis@Nullainterdum.org", "bking", "p@ssword1"),
+(10,"Rajah","Olsen","Vestibulum.ut.eros@nequevenenatislacus.ca", "rolsen", "p@ssword1"),
+(11,"Castor","Kelly","Fusce.feugiat.Lorem@porta.co.uk", "ckelly", "p@ssword1"),
+(12,"Omar","Oconnor","eu.turpis@auctorvelit.co.uk", "ooconnor", "p@ssword1"),
+(13,"Porter","Leonard","dui.Fusce@accumsanlaoreet.net", "pleonard", "p@ssword1"),
+(14,"Buckminster","Gaines","convallis.convallis.dolor@ligula.co.uk", "bgaines", "p@ssword1"),
+(15,"Hunter","Rodriquez","ridiculus.mus.Donec@est.co.uk", "hrodriquez", "p@ssword1"),
+(16,"Zahir","Harper","vel@estNunc.com", "zharper", "p@ssword1"),
+(17,"Sopoline","Warner","vestibulum.nec.euismod@sitamet.co.uk", "swarner", "p@ssword1"),
+(18,"Burton","Parrish","consequat.nec.mollis@nequenonquam.org", "bparrish", "p@ssword1"),
+(19,"Abbot","Rose","non@et.ca", "arose", "p@ssword1"),
+(20,"Barry","Burks","risus@libero.net", "bburks", "p@ssword1"),
+(21,"Daniel","Tibbotts","dan.tibbotts@gmail.com", "dtibbotts", "GodIsGood7%"),
+(22,"Jun","Han","junh@whitecliffe.ac.nz", "jhan1", "abcd1234!@#$");
 
 
 -- Create booking table
