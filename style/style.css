@@ -32,6 +32,7 @@ h6 {
   color: #000;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
+  color: #c34822;
 }
 
 h1 {
@@ -85,16 +86,18 @@ form input {
 
 button {
   border: solid 1px rgb(11, 125, 190);
-  padding: 5px 15px;
+  border: none;
+  padding: 9px 20px;
   margin-right: 4px;
   background-color: rgb(11, 124, 190);
+  background-color: #c34822;
   color: white;
-  opacity: 0.85;
+  opacity: 1;
   transition: 0.3s;
 }
 
 button:hover {
-  opacity: 1;
+  opacity: 0.80;
 }
 
 fieldset {
