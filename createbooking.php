@@ -280,7 +280,7 @@
       </p>
     </form>
 
-
+    <span id="search-qty"></span>
     <table id="results-table">
       <thead>
         <tr>
@@ -388,6 +388,9 @@
         }).done(function(res) {
 
           const tbl = document.getElementById("results-table");
+          const searchQty = document.getElementById("search-qty");
+          searchQty.innerHTML = `<span id="available-rooms-qty" class="bold">${res.length}</span> rooms available`;
+          
           let rowCount = tbl.rows.length;
           
           tbl.innerHTML = "<thead><tr><th>Room #</th><th>Room Name</th><th>Room Type</th><th>Beds</th></tr></thead>";
