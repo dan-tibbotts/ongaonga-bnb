@@ -116,7 +116,7 @@
               // If no review exists, show 'Add Review'
               // if review exists, show 'Edit Review'
               if(empty($row['roomreview'])){
-                echo  "<a href='./createroomreview.php?id=$booking_id'>[add review]</a> ";
+                echo  "<a href='./createroomreview.php?id=$booking_id' class='bold'>[add review]</a> ";
               } else {
                 echo  "<a href='./editroomreview.php?id=$booking_id'>[edit review]</a> ";
               }        

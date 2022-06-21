@@ -41,7 +41,7 @@
         throw new Exception("Booking id not provided");
       }  
 
-      $select_sql = " SELECT b.roomreview, b.customerID, c.firstname, c.lastname
+      $select_sql = " SELECT b.roomreview, b.customerID, c.firstname, c.lastname, b.checkoutdate
                       FROM (booking AS b 
                       INNER JOIN customer AS c ON b.customerID = c.customerID)
                       WHERE bookingID=?";
@@ -57,6 +57,14 @@
         $row = mysqli_fetch_assoc($select_result);
         $room_review = $row['roomreview'];
         $customer_name = $row['firstname'] . " " . $row['lastname'];
+        $check_out_date = $row['checkoutdate'];
+
+        $current_date = date("Y-m-d");
+        
+        // Room review cannot be made if checkout date is < current date
+        if(strtotime($check_out_date) > strtotime($current_date)){
+          throw new Exception("Checkout date ($check_out_date) is greater than current date ($current_date).");
+        }
 
         // Display Error if Reivew already placed
         if(!empty($room_review) && !isset($_GET['success'])){
