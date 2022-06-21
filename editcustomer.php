@@ -282,7 +282,7 @@
           />
           <i id="viewPassword" class="fa-solid fa-eye"></i>
       </p>
-        <input type="submit" name="submit" value="Update">
+        <button type="submit" name="submit" value="Update">Update</button>
       </form>
 
       <?php } ?>

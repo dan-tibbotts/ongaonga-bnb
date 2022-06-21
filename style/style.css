@@ -28,24 +28,23 @@ h3,
 h4,
 h5,
 h6 {
-  font: normal 175% "century gothic", arial, sans-serif;
-  color: #000;
-  margin: 0 0 15px 0;
-  padding: 15px 0 5px 0;
-  color: #c34822;
+  font-family: "century gothic", arial, sans-serif;
+  color: hsla(202, 88%, 32%, 0.767);
+  text-shadow: 0px 0px 1px hsla(202, 88%, 32%, 0.842);
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
   padding-top: 40px;
+  color: hsla(202, 88%, 32%, 0.849);
+  text-shadow: 0px 0px 1px hsla(202, 88%, 32%, 0.445);
 }
 
-h2 {
-  font: normal 175% "century gothic", arial, sans-serif;
-}
-
+h2,
 h3 {
   padding-bottom: 0px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
 h4,
@@ -89,21 +88,26 @@ button {
   border: none;
   padding: 9px 20px;
   margin-right: 4px;
-  background-color: rgb(11, 124, 190);
-  background-color: #c34822;
+  background-color: hsla(202, 88%, 32%, 0.767);
   color: white;
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.25s;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px hsla(202, 88%, 32%, 0.521);
+  text-shadow: 0px 0px 1px hsl(202, 88%, 32%);
+  -webkit-font-smoothing: antialiased;
 }
 
 button:hover {
-  opacity: 0.80;
+  opacity: 0.90;
+  box-shadow: 0px 1px 5px hsla(202, 88%, 32%, 0.863);
+  text-shadow: 0px 0px 1px hsla(202, 88%, 32%, 0.863);
 }
 
 fieldset {
   padding: 15px;
-  border: solid 1px #47433f46;
-  background-color: hsla(0, 0%, 36%, 0.007);
+  border: 1px solid hsla(202, 88%, 32%, 0.075);
+  background-color: hsla(202, 88%, 32%, 0.027);
   padding-bottom: 30px;
 }
 
@@ -274,7 +278,7 @@ ul#menu li.selected a:hover {
 
 ul#menu .user a {
   margin-left: 50px;
-  background-color: rgba(10, 101, 153, 0.726);
+  background-color: hsla(202, 88%, 32%, 0.726);
   border-radius: 20px;
 }
 
@@ -435,20 +439,27 @@ ul#menu .user a {
 table {
   width: 100%;
   margin: 10px 0 30px 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid hsla(202, 88%, 32%, 0.205);
 }
 
 table tr th,
 table tr td {
-  background: #3b3b3b;
+  background: hsla(202, 88%, 32%, 0.767);
+  text-shadow: 0px 0px 1px hsla(202, 88%, 32%, 0.432);
   color: #fff;
   padding: 7px 4px;
   text-align: left;
+  border-bottom: 1px solid hsla(202, 88%, 32%, 0.205);
 }
 
 table tr td {
-  background: #f0efe2;
-  color: #47433f;
+  background: hsla(202, 88%, 32%, 0.027);
+  text-shadow: 0px 0px 1px hsla(202, 88%, 32%, 0.301);
+  color: #3d3a36;
 }
+
 
 .caution-box {
   text-transform: uppercase;
@@ -486,7 +497,8 @@ table tr td {
 
 .login-sidebar {
   text-align: center;
-  background-color: #5d5d5d11;
+  border: 1px solid hsla(202, 88%, 32%, 0.075);
+  background-color: hsla(202, 88%, 32%, 0.027);
   padding: 15px 5px;
   margin-top: 20px;
 }

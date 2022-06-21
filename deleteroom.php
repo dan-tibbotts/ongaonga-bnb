@@ -148,7 +148,7 @@
 
       <input type="hidden" name="id" value="<?php echo $id; ?>">
 
-      <input type="submit" name="submit" value="Delete">
+      <button type="submit" name="submit" value="Delete">Delete</button>
       <a href="./listrooms.php">[Cancel]</a>
     </form>
     <?php } ?>

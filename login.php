@@ -118,6 +118,10 @@
 
   <div id="content">
   <h1>Customer Login</h1>
+  <p>
+    <a href='./register.php'>[Register]</a>
+    <a href='./index.php'>[Return to the main page]</a>
+  </p>
 
   <form method="POST" action="./login.php">
     <!-- Username -->

@@ -219,7 +219,7 @@
           required> 
       </p> 
 
-      <input type="submit" name="submit" value="Update">
+      <button type="submit" name="submit" value="Update">Update</button>
     </form>
     <?php } ?>
 
