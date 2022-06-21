@@ -37,7 +37,7 @@
       <a href="./index.php">[Return to the main page]</a>
     </p>
 
-    <table>
+    <table id="bookings-table">
       <thead>
         <tr>
           <th>Booking (room, dates)</th>
